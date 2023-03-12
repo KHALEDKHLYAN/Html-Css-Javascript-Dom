@@ -8,13 +8,37 @@
         <title>Dom ELemnts</title>
     </head>
 
+    <style>
+        #container {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background: yellowgreen;
+        }
+
+        #animate {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: rebeccapurple;
+        }
+    </style>
+
     <body>
         <p id="demo"></p>
         <form name="myForm" action="" onsubmit="return validateForm()">
             Name: <input type="text" name="fname">
             <input type="submit" value="Submit">
         </form>
-
+        <br>
+        <hr style="width:100%;text-align:left;margin-left:0">
+        <h1>Animating With Javascript</h1>
+        <p><button onclick="myMove()">CLick Me</button></p>
+        <div id="container">
+            <div id="animate"></div>
+        </div>
+        <br>
+        <hr style="width:100%;text-align:left;margin-left:0">
 
         <script src="/script.js"></script>
     </body>
